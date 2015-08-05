@@ -9,12 +9,17 @@
     font-family: 'ArchitectsDaughter'; /*a name to be used later*/
     src: url('font/ArchitectsDaughter.ttf'); 
 }
-body { background-color: rgb(192,192,192);
+body { background-color: rgb(255,255,255);
 	color: rgb(0,0,0);
 	font-family: 'ArchitectsDaughter';
 	font-weight: 300;
-	padding: 10px; }
+	padding: 10px; 
+  margin: 5px;
+}
 
+.nav-title{
+  text-align: center;
+}
 #nav {
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0);
   display: block;
@@ -153,27 +158,38 @@ img {
 }
 
 .game-title{
-    position: absolute;
-    top: 30%;
-    left: 30%;
     font-size: 50px;
     text-align: center;
-    color: rgb(76,0,104);
+    background-color: rgb(87, 112, 107);
+    color: rgb(159, 159, 159);
+    border-radius: 25px;
+    padding: 10px;
   }
-
+.blurb{
+    text-align: center;
+    color: rgb(159, 159, 159);
+    padding: 10px;
+}
+.play-button{
+  text-align: center;
+}
 .play{
     font-size: 30px;
     background-color: rgb(128,128,128);
     color: rgb(255,255,255);
+    border-radius: 25px;
+    padding: 5px;
 }
 
 .story-line{
   background-color: rgb(224,224,224);
   font-size: 16px;
   float:left;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 400px;
   margin: 15px;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 .questions{
@@ -182,6 +198,8 @@ img {
    margin: 15px;
    float:left;
    height: 120px;
+   border-radius: 25px;
+   padding: 10px;
 }
 
 .answers{
@@ -189,24 +207,167 @@ img {
   margin: 15px;
   padding-bottom: 10px;
   height: 120px;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 .scores{
-  background-color: rgb(224,224,224);
-  font-size: 20px;
-  margin: 15px;
-  padding: 2px;
+  
 }
 
 .points{
-  background-color: rgb(76,0,153);
+  background-color: rgb(224,224,224);
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+}
+.time{
+  background-color: rgb(224,224,224);
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
 }
 .points-score{
   font-size: 24px;
 }
 
 .time-keeper{
-  font-size: 24px;
+  
+}
+
+.badges{
+  background-color: rgb(224,224,224);
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.snooze{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.no-snooze{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+
+}
+.snoozed-once{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.no-snooze1{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.presentable{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.onTime{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.gym{
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.lunch1{
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.longShower{
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.coffee{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.lunch2{
+  height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.porridge{
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.smoothie{
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.muffin{
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.none{
+ height: auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 article, aside, figure, footer, header, hgroup,
