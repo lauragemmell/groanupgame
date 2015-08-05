@@ -1,0 +1,214 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* {}
+@font-face {
+    font-family: 'ArchitectsDaughter'; /*a name to be used later*/
+    src: url('font/ArchitectsDaughter.ttf'); 
+}
+body { background-color: rgb(192,192,192);
+	color: rgb(0,0,0);
+	font-family: 'ArchitectsDaughter';
+	font-weight: 300;
+	padding: 10px; }
+
+#nav {
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0);
+  display: block;
+  margin: 0px 0px 0px 0px; 
+}
+
+.navbar {
+  min-height: 58px;
+  margin-bottom: 0px;
+}
+
+.dropdown-menu{
+  min-width:50px;
+}
+
+.navbar-nav{
+  float:right;
+  background-color:#fff;
+}
+
+.navbar-header {
+  min-height: 58px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.navbar-toggle {
+  background-color: rgb(51,153,255);
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.container-fluid {height:58px;}
+
+.navbar-toggle .icon-bar {
+  color: black;
+}
+
+nav ul {
+  
+  color: rgb(0,0,0);
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+    
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; 
+  }
+  
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+    }
+nav > ul > li > a > .caret {
+  border-top: 4px solid #aaa;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+  
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+    transition: color 0.1s linear; 
+}
+nav > ul > li:hover {
+          background-color: rgb( 51,153,255 );
+        }
+
+        nav > ul > li:hover > a {
+          color: rgb( 255, 255, 255 );
+        }
+
+        nav > ul > li:hover > a > .caret {
+          border-top-color: rgb( 255, 255, 255 );
+        }
+nav > ul > li > div {
+  background-color: rgb( 51,153,255 );
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  display: block;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  width: auto;
+  visibility: hidden;
+  z-index: 100;
+  
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+nav > ul > li > div ul > li {
+    display: block;
+  }
+  
+nav > ul > li > div ul > li > a {
+      color: #fff;
+      display: block;
+      padding: 12px 24px;
+      text-decoration: none;
+    }
+  
+nav > ul > li > div ul > li:hover > a {
+    background-color: rgba( 255, 255, 255, 0.1);
+  }
+nav > ul > li:hover > div {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+img { 
+    display: ;
+}
+
+.game-title{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(76,0,104);
+  }
+
+.play{
+    font-size: 30px;
+    background-color: rgb(128,128,128);
+    color: rgb(255,255,255);
+}
+
+.story-line{
+  background-color: rgb(224,224,224);
+  font-size: 16px;
+  float:left;
+  overflow-y: auto;
+  height: 400px;
+  margin: 15px;
+}
+
+.questions{
+  background-color: rgb(224,224,224);
+  font-size: 20px;
+   margin: 15px;
+   float:left;
+   height: 120px;
+}
+
+.answers{
+  background-color: rgb(224,224,224);
+  margin: 15px;
+  padding-bottom: 10px;
+  height: 120px;
+}
+
+.scores{
+  background-color: rgb(224,224,224);
+  font-size: 20px;
+  margin: 15px;
+  padding: 2px;
+}
+
+.points{
+  background-color: rgb(76,0,153);
+}
+.points-score{
+  font-size: 24px;
+}
+
+.time-keeper{
+  font-size: 24px;
+}
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
