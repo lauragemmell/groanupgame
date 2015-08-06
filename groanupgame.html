@@ -5,46 +5,69 @@
 </head>
 
 <body>
-	<div id="nav" class='row'>
-		<div class='col-sm-8'>
-        	<nav>
-	          <ul>
-	            <li><a href="/index.html">Home</a></li>
-	            <li>
-	                <a href="/Play">Play <span class="caret"></span></a>
-	                  <div>
-	                    <ul>
-	                      <li><a href="/morning">Morning Edition</a></li>
-	                    </ul>
-	                  </div>
-	            </li>
-	            <li><a href="/about">About</a>
-	              <div>     
-	                <ul>
-	                  <li><a href="/about">About</a></li>
-	                  <li><a href="/aboutus">About Us</a></li>
-	                </ul>
-	              </div>
+	<div class='row'>
+		<div class='col-sm-1'>
+		</div>
+		<div class='col-sm-10'>
+				<div id="nav" class='row'>
+					<div class='col-sm-9'>
+			        	<nav>
+				          <ul>
+				            <li><a href="/index.html">Home</a></li>
+				            <li>
+				                <a href="/Play">Play <span class="caret"></span></a>
+				                  <div>
+				                    <ul>
+				                      <li><a href="/morning">Morning Edition</a></li>
+				                    </ul>
+				                  </div>
+				            </li>
+				            <li><a href="/about">About</a>
+				              <div>     
+				                <ul>
+				                  <li><a href="/about">About</a></li>
+				                  <li><a href="/aboutus">About Us</a></li>
+				                </ul>
+				              </div>
 
-	            </li>
-	      
-	            <li><a href="/contact">Contact</a></li>
-	          </ul>
+				            </li>
+				      
+				            <li><a href="/contact">Contact</a></li>
+				          </ul>
 
-	        </nav>
-    	</div>
-      	<div class='col-sm-4 nav-title'>
-      		<br>
-        	<p>Being a Groan Up </p>
-      	</div>
+				        </nav>
+			    	</div>
+			      	<div class='col-sm-3 nav-title'>
+			      		<br>
+			        	<p><span class='nav-title-text'>Being a Groan Up </span></p>
+			      	</div>
+		      </div>
+		     </div>
+	      	<div class='col-sm-1'>
+			</div>
+		
   </div>
+  
 
   <div class = 'row'>
+  	
   			<div class='col-sm-1'>
 			</div>
 			<div class='col-sm-10 game-title'>
-				<p>Being a Groan Up:</p>
-				<p>Morning Edition</p>
+				<div class='row'>
+					<div class='col-sm-3'>
+						<i class="fa fa-female fa-3x"></i>
+						<i class="fa fa-male fa-3x"></i>
+					</div>
+
+					<div class='col-sm-6 groan-title'>
+						<p>        Being a Groan Up:</p>
+						<p>        Morning Edition</p>
+					</div>
+					<div class='col-sm-3'>
+						<i class="fa fa-bed fa-3x fa-pull-right"></i>
+					</div>
+				</div>
 			</div>
 			<div class='col-sm-1'>
 			</div>
@@ -58,7 +81,7 @@
 				<p>Monday mornings...</p>
 		</div>
 		<div class='row play-button'>
-			<input type="button" class="play" value="PLAY"></input>
+			<input type="button" class="play" value="Play"></input>
 		</div>
 	
 
@@ -66,9 +89,9 @@
 	<div class = 'row'>
 		<div class='col-sm-1'>
 		</div>
-		<div id= 'story-line' class='col-sm-6 story-line'>
+		<div  class='col-sm-6 story-line'>
 			<h2> Your Day So Far: </h2>
-
+			<div id= 'story-line'>
 			<div class='snooze-question'>
 				<p>Imagine you're happily snoozing, dreaming of wonderful thing like Fridays and puppies...</p>
 				<p>BRRRRRRRRR BRRRRRRRR. </p>
@@ -102,8 +125,9 @@
 			<div class='late'>
 				<p> Oops, you missed breakfast...</p>
 				<p> And your train.</p>
-				<p> Hopefully you're Monday gets better...</p>
+				<p> Hopefully your Monday gets better...</p>
 			</div>
+		</div>
 		</div>
 		<br>
 		<div class='col-sm-4'>
@@ -118,11 +142,29 @@
 				</div>
 			</div>
 			<div class='row badges'>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<h3> Badges: </h3>
+				<div class='breakfastIcon'>
+					<i class="fa fa-spoon fa-2x"></i> Breakfast
+				</div>
+				<div class='lunchIcon'>
+					<i class="fa fa-cutlery fa-2x"></i> Lunch
+				</div>
+				<div class='onTimeWorkIcon'>
+					<i class="fa fa-clock-o fa-2x"></i> On Time
+				</div>
+				<div class='presentableIcon'>
+					<i class="fa fa-black-tie fa-2x"></i> Presentable
+				</div>
+				<div class='coffeeIcon'>
+					<i class="fa fa-coffee fa-2x"></i> Coffee
+				</div>
+				<div class='gymIcon'>
+					<i class="fa fa-heartbeat fa-2x"></i> Gym
+				</div>
+				<div class='noSnoozeIcon'>
+					<i class="fa fa-thumbs-o-up fa-2x"></i> No Snoozing
+				</div>
+	
 			</div>
 		</div>
 		<div class='col-sm-1'>
@@ -141,27 +183,27 @@
 				</div>
 		 		<div class='col-sm-10 snooze-question'>	
 		 			<div class='row'>
-		 				<div class='col-sm-4'>
+		 				<div class='col-sm-3'>
 							<input type="button" class="snooze" value="Snooze the alarm. Of course"></input>
 						</div>
-						<div class='col-sm-4'>
+						<div class='col-sm-3'>
 							<input type="button" class="no-snooze" value="Jump out of bed and face the day"></input>
 						</div>
 					</div>
 				
 					<div class='row snoozed-once'>
-			 				<div class='col-sm-6'>
+			 				<div class='col-sm-3'>
 								<input type="button" class="snooze1" value="Snooze, always snooze"></input>
 							</div>
-							<div class='col-sm-6'>
+							<div class='col-sm-3'>
 								<input type="button" class="no-snooze1" value="Eurgh, force yourself out of bed"></input>
 							</div>
 					</div>
 					<div class='row snoozed-twice'>
-						<div class='col-sm-6'>
+						<div class='col-sm-3'>
 							<input type="button" class="presentable" value="Get in the shower. Presentable all the way"></input>
 						</div>
-						<div class='col-sm-6'>
+						<div class='col-sm-3'>
 							<input type="button" class="onTime" value="Rush to get ready. You have to be on time"></input>
 						</div>
 					</div>
@@ -177,10 +219,10 @@
 						</div>
 					</div>
 					<div class='row snoozed-once-up'>
-						<div class='col-sm-6'>
+						<div class='col-sm-3'>
 							<input type="button" class="coffee" value="Enjoy a much needed cup of coffee"></input>
 						</div>
-						<div class='col-sm-6'>
+						<div class='col-sm-3'>
 							<input type="button" class="lunch2" value="Make a yummy lunch and save yourself a few pennies"></input>
 						</div>
 					</div>
@@ -215,6 +257,7 @@
 <link href='css/main.css' type='text/css' rel='stylesheet'>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://momentjs.com/downloads/moment.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
 <script type="text/javascript">   
@@ -230,29 +273,77 @@ $(document).ready(function(){
 ////////////// setting up original variables //////////////////////
 	var time = moment(07,"hh");					
 	var points = 1000;
-	var breakfast = false;
-	var lunch = false;
-	var dinner = false;
-	var onTime = false;
-	var presentable = false;
-
-
-
+	var breakfastBadge = false;
+	var lunchBadge = false;
+	var onTimeWorkBadge = false;
+	var presentableBadge = false;
+	var coffeeBadge = false;
+	var gymBadge = false;
+	var noSnoozeBadge = false;
 /////////// Updater functions /////////////////////////
 	function updateScore(){						
 		$('.points-score').text(points);
 	}
-
 	function updateTime(){
 		$('.time-keeper').text(time.format("h:mm"));
 	}
+	function updateBreakfastBadge(){						
+		$('.breakfastBadge').text(breakfastBadge);
+		if(breakfastBadge === true){
+			$('.breakfastIcon').show();
+		}
+	}
+	function updateLunchBadge(){						
+		$('.lunchBadge').text(lunchBadge);
+		if(lunchBadge === true){
+			$('.lunchIcon').show();
+		}
+	}
+	function updateOnTimeWorkBadge(){						
+		$('.onTimeWorkBadge').text(onTimeWorkBadge);
+		if(onTimeWorkBadge === true){
+			$('.onTimeWorkIcon').show();
+		}
+	}
+	function updatePresentableBadge(){						
+		$('.presentableBadge').text(presentableBadge);
+		if(presentableBadge === true){
+			$('.presentableIcon').show();
+		}
+	}
+	function updateCoffeeBadge(){						
+		$('.coffeeBadge').text(coffeeBadge);
+		if(coffeeBadge === true){
+			$('.coffeeIcon').show();
+		}
+	}
+	function updateGymBadge(){						
+		$('.gymBadge').text(gymBadge);
+		if(gymBadge === true){
+			$('.gymIcon').show();
+		}
+	}
+	function updateNoSnoozeBadge(){						
+		$('.noSnoozeBadge').text(noSnoozeBadge);
+		if(noSnoozeBadge === true){
+			$('.noSnoozeIcon').show();
+		}
+	}
+
 
 	updateScore();
 	updateTime();
+	updateBreakfastBadge();
+	updateLunchBadge();
+	updateOnTimeWorkBadge();
+	updatePresentableBadge();
+	updateCoffeeBadge();
+	updateGymBadge();
+	updateNoSnoozeBadge();
 
 	var objDiv = document.getElementById('story-line');
 		
-
+	
 ///////////////////title sequence ////////////////////////////
 
 	$('.play-button .play').click(function(element){	
@@ -266,6 +357,13 @@ $(document).ready(function(){
 		$('.snoozed-once-up').hide();
 		$('.breakfast').hide();
 		$('.late').hide();
+		$('.breakfastIcon').hide();
+		$('.lunchIcon').hide();
+		$('.onTimeWorkIcon').hide();
+		$('.presentableIcon').hide();
+		$('.coffeeIcon').hide();
+		$('.gymIcon').hide();
+		$('.noSnoozeIcon').hide();
 		$('.questions').show();	
 		$('.answers').show();
 		$('.points').show();
@@ -287,6 +385,15 @@ $(document).ready(function(){
 		time.add(15, "m");
 		updateScore();
 		updateTime();
+		updateScore();
+		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.snooze').hide();
 		$('.no-snooze').hide();
 		$('.snoozed-once').show();
@@ -299,6 +406,15 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		points = points + 75;
 		updateScore();
 		updateTime();
+		updateScore();
+		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.snooze1').hide();
 		$('.no-snooze1').hide();
 		$('.snoozed-once-up').show();
@@ -309,8 +425,18 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points +75;
 		time.add(15, "m");
+		coffeeBadge = true;
 		updateScore();
 		updateTime();
+		updateScore();
+		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.lunch2').hide();
 		$('.coffee').hide();
 		$('.breakfast').show();
@@ -321,8 +447,16 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points + 100;
 		time.add(30, "m");
+		lunchBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.lunch2').hide();
 		$('.coffee').hide();
 		$('.breakfast').show();
@@ -335,6 +469,13 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		time.add(15, "m");
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.snooze1').hide();
 		$('.no-snooze1').hide();
 		$('.snoozed-twice').show();
@@ -346,8 +487,16 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points - 100;
 		time.add(50, "m");
+		presentableBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.onTime').hide();
 		$('.presentable').hide();
 		if(time.isAfter('8','h')){
@@ -372,6 +521,13 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		time.add(30, "m");
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.onTime').hide();
 		$('.presentable').hide();
 		$('.breakfast').show;
@@ -382,8 +538,16 @@ $('.snoozed-once .no-snooze1').click(function(element){
 	$('.snooze-question .no-snooze').click(function(element){
 		element.preventDefault();
 		points = points + 50;
+		noSnoozeBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.snooze').hide();
 		$('.no-snooze').hide();
 		$('.jumped-up').show();
@@ -395,8 +559,16 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points + 100;
 		time.add(1, "h");
+		gymBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.lunch1').hide();
 		$('.gym').hide();
 		$('.longShower').hide();
@@ -409,8 +581,16 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points + 100;
 		time.add(30, "m");
+		lunchBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.lunch1').hide();
 		$('.gym').hide();
 		$('.longShower').hide();
@@ -425,6 +605,13 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		time.add(30, "m")
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.lunch1').hide();
 		$('.gym').hide();
 		$('.longShower').hide();
@@ -437,12 +624,20 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points + 100;
 		time.add(10, "m")
+		breakfastBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.porridge').hide();
 		$('.smoothie').hide();
 		$('.muffin').hide();
-		$('.pastie').hide();
+		$('.none').hide();
 		if(time.isAfter('8','h')){
 			$('.late').show();
 		} else{
@@ -460,12 +655,20 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points + 70;
 		time.add(15, "m")
+		breakfastBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.porridge').hide();
 		$('.smoothie').hide();
 		$('.muffin').hide();
-		$('.pastie').hide();
+		$('.none').hide();
 		if(time.isAfter('8:00','h:mm')){
 			$('.late').show();
 		} else if(time.isAfter('45','m')){
@@ -486,12 +689,20 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		element.preventDefault();
 		points = points - 20;
 		time.add(15, "m")
+		breakfastBadge = true;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.porridge').hide();
 		$('.smoothie').hide();
 		$('.muffin').hide();
-		$('.pastie').hide();
+		$('.none').hide();
 		if(time.isAfter('8:00','h:mm')){
 			$('.late').show();
 		} else if(time.isAfter('45','m')){
@@ -512,10 +723,17 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		points = points - 100;
 		updateScore();
 		updateTime();
+		updateBreakfastBadge();
+		updateLunchBadge();
+		updateOnTimeWorkBadge();
+		updatePresentableBadge();
+		updateCoffeeBadge();
+		updateGymBadge();
+		updateNoSnoozeBadge();
 		$('.porridge').hide();
 		$('.smoothie').hide();
 		$('.muffin').hide();
-		$('.pastie').hide();
+		$('.none').hide();
 		if(time.isAfter('8:00','h:mm')){
 			$('.late').show();
 		} else if(time.isAfter('45','m')){
