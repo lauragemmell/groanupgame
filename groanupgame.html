@@ -499,18 +499,7 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		updateNoSnoozeBadge();
 		$('.onTime').hide();
 		$('.presentable').hide();
-		if(time.isAfter('8','h')){
-			$('.late').show();
-		} else if(time.isAfter('45','m')){
-			missed_train = Math.floor(Math.random() * 2)
-			if(missed_train === 1){
-				$('.late2').show();
-			} else{
-				$('.summary').show();
-			}
-		} else{
-			$('.summary').show();
-		}
+		
 		objDiv.scrollTop = objDiv.scrollHeight;
 		
 	});
@@ -638,16 +627,6 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		$('.smoothie').hide();
 		$('.muffin').hide();
 		$('.none').hide();
-		if(time.isAfter('8','h')){
-			$('.late').show();
-		} else{
-			missed_train = Math.floor(Math.random() * 2)
-			if(missed_train === 1){
-				$('.late2').show();
-			} else{
-				$('.summary').show();
-			}
-		}
 		objDiv.scrollTop = objDiv.scrollHeight;
 	});
 
@@ -669,18 +648,6 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		$('.smoothie').hide();
 		$('.muffin').hide();
 		$('.none').hide();
-		if(time.isAfter('8:00','h:mm')){
-			$('.late').show();
-		} else if(time.isAfter('45','m')){
-			missed_train = Math.floor(Math.random() * 2)
-			if(missed_train === 1){
-				$('.late2').show();
-			} else{
-				$('.summary').show();
-			}
-		} else{
-			$('.summary').show();
-		}
 		objDiv.scrollTop = objDiv.scrollHeight;
 		
 	});
@@ -703,18 +670,6 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		$('.smoothie').hide();
 		$('.muffin').hide();
 		$('.none').hide();
-		if(time.isAfter('8:00','h:mm')){
-			$('.late').show();
-		} else if(time.isAfter('45','m')){
-			missed_train = Math.floor(Math.random() * 2)
-			if(missed_train === 1){
-				$('.late2').show();
-			} else{
-				$('.summary').show();
-			}
-		} else{
-			$('.summary').show();
-		}
 		objDiv.scrollTop = objDiv.scrollHeight;
 	});
 
@@ -734,37 +689,9 @@ $('.snoozed-once .no-snooze1').click(function(element){
 		$('.smoothie').hide();
 		$('.muffin').hide();
 		$('.none').hide();
-		if(time.isAfter('8:00','h:mm')){
-			$('.late').show();
-		} else if(time.isAfter('45','m')){
-			missed_train = Math.floor(Math.random() * 2)
-			if(missed_train === 1){
-				$('.late2').show();
-			} else{
-				$('.summary').show();
-			}
-		} else{
-			$('.summary').show();
-		}
 		objDiv.scrollTop = objDiv.scrollHeight;
 	});
 
-	$('.train').show(function(element){
-		element.preventDefault();
-		if(time.isAfter('8:00','h:mm')){
-			$('.late').show();
-		} else if(time.isAfter('45','m')){
-			missed_train = Math.floor(Math.random() * 2)
-			if(missed_train === 1){
-				$('.late2').show();
-			} else{
-				$('.summary').show();
-			}
-		} else{
-			$('.summary').show();
-		}
-		objDiv.scrollTop = objDiv.scrollHeight;
-	});
 
 	// for (time = 0700; time <= 0745; time += 15 ){
 
